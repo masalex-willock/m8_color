@@ -1,0 +1,117 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header, header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .4rem 4rem;
+  background-color: #f1f1f1;
+}
+
+p {
+  background-color: #333;
+  color: #f1f1f1;
+  font: 1.2rem/1.5 Roboto, sans-serif;
+  padding: .8rem 4rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: #525252;
+  color: #f1f1f1;
+  text-transform: capitalize;
+  padding: .4rem 1.2rem;
+  border-radius: .2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+  font: .8rem/1.5 Quicksand, sans-serif;
+  width: 32vw;
+}
+
+article {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-top: 2px solid rgba(128, 128, 128, 0.397);
+}
+
+section.colors {
+  background-color: #241f1f;
+  padding: 2rem 4rem;
+}
+
+section p {
+  font: italic .8rem Poppins;
+  background-color: unset;
+  text-align: start;
+}
+
+section div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+button#prev_color {
+  background: rgba(31, 0, 59, 0.774);
+}
+
+button#prev3 {
+  background: rgba(223, 192, 250, 0.774);
+  color: #100025;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.swatch {
+  width: 44px;
+  height: 32px;
+  border: none;
+  outline: none;
+  background-color: red;
+  border-radius: .2rem;
+}
+
+.swatch + .swatch {
+  margin-left: .4rem;
+}

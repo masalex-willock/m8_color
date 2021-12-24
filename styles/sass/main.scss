@@ -1,0 +1,88 @@
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header, header ul{
+  display: flex;
+  justify-content: space-between; align-items: flex-end;
+}
+
+header{
+  height: 3rem; display: flex;
+  padding: .4rem 4rem;
+  background-color: $light1;
+}
+
+p{
+  background-color: $black;
+  color: $light1; font: 1.2rem/1.5 Roboto, sans-serif;
+  padding: .8rem 4rem;
+
+  margin-bottom: 1rem;
+}
+
+button{
+  outline: none; border: none;
+  background-color: $gray;
+  color: $light1;
+  text-transform: capitalize;
+
+  padding: .4rem 1.2rem; border-radius: .2rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+// indeviduals
+header ul{
+  list-style: none;
+  font: .8rem/1.5 Quicksand, sans-serif;
+  width: 32vw;
+}
+
+article{
+  height: 60vh; display: flex; align-items: center; justify-content: center;
+
+  text-align: center; border-top: 2px solid rgba(128, 128, 128, 0.397);
+}
+
+section.colors{
+  background-color: rgb(36, 31, 31);
+  padding: 2rem 4rem;
+}
+
+section p{
+  font: italic .8rem Poppins;
+  background-color: unset; text-align: start;
+}
+
+section div{
+  align-self: center;
+}
+
+button#prev_color{
+  background: rgba(31, 0, 59, 0.774);
+}
+button#prev3{
+  background: rgba(223, 192, 250, 0.774);
+  color: rgb(16, 0, 37);
+}
+
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+
+.swatch{
+  width: 44px; height: 32px; border: none; outline: none;
+  background-color: red;
+
+  border-radius: .2rem;
+} .swatch + .swatch{margin-left: .4rem;}
